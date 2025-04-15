@@ -1,15 +1,15 @@
-#Taller Transformaciones CompuVisual
-
+# Taller Transformaciones CompuVisual
+ 
 ---
 
-##Python con Jupyter Notebook
+## Python con Jupyter Notebook
 
 **Descripcion**
 Proyecto que genera la animacion de un cuadrado rotando, trasladandose en un circulo y cambiando de tamaño a lo largo de los 60 frames.
 
 Este proyecto hace uso de *Matrices de transformacion* para rotar, trasladar y escalar el cuadrado.
 
-![Demostracion de la animacion de Python](2025-04-12_Taller1_Transformacion/Python/animacionCuadradoPython.gif)
+![Demostracion de la animacion de Python](https://github.com/Jul1014/Compuvisual-General/blob/master/2025-04-12_Taller1_Transformacion/Python/animacionCuadradoPython.gif)
 
 **Ejecutar**
 
@@ -27,14 +27,14 @@ Para asegurar la correcta visualizacion de la animacion y las matrices, no se pr
 
 ---
 
-##Unity con C#
+## Unity con C#
 
 **Descripcion**
 Proyecto que genera la animacion de un cubo rotando, trasladandose a una posicion aleatoria en un rango dado y cambiando de tamaño.
 
 Este proyecto modifica el componente *Transform* del cubo con los metodos `.Translate, .Rotate y .localScale para trasladar, rotar y escalar el cubo; respectivamente.
 
-![Demostracion de la animacion de Unity](2025-04-12_Taller1_Transformacion/Unity/animacionCuboUnity.gif)
+![Demostracion de la animacion de Unity](https://github.com/Jul1014/Compuvisual-General/blob/master/2025-04-12_Taller1_Transformacion/Unity/animacionCuboUnity.gif)
 
 **Ejecutar**
 
@@ -47,9 +47,13 @@ Este proyecto modifica el componente *Transform* del cubo con los metodos `.Tran
 En el archivo `ModifyTransform.cs` están separadas las variables que se pueden modificar para visualizar la simulacion de diferentes maneras:
 
 <br>
-    float speed=4f; //Speed of the movement of the cube
-    float rotationSpeed = 70f; //Speed of the rotation of the cube
-    float range= 7f; //Range for the random movement of the cube
+
+```c#
+float speed=4f; //Speed of the movement of the cube
+float rotationSpeed = 70f; //Speed of the rotation of the cube
+float range= 7f; //Range for the random movement of the cube
+```
+
 <br>
 
 ---
@@ -61,7 +65,7 @@ Proyecto que genera la animación de una esfera rotando, trasladandose en trayec
 
 Este proyecto utiliza el hook *useFrame* de React Three Fiber para modificar las propiedades de la esfera usando el `sphereRef.current` de la esfera, aplicando cambios a su posición, rotación y escala. Además, se usa *OrbitControls* para permitir interacción con la cámara.
 
-![Demostración de la animación de Three.js](2025-04-12_Taller1_Transformacion/ThreeJs/animacionEsferaThreeJs.gif)
+![Demostración de la animación de Three.js](https://github.com/Jul1014/Compuvisual-General/blob/master/2025-04-12_Taller1_Transformacion/ThreeJs/animacionEsferaThreeJs.gif)
 
 **Ejecutar**
 
@@ -75,10 +79,13 @@ Este proyecto utiliza el hook *useFrame* de React Three Fiber para modificar las
 En el mismo archivo del componente se encuentran las variables que controlan el comportamiento de la animación. Estas pueden modificarse para lograr distintos efectos visuales:
 
 <br>
+
+```js
 const rotSpeed = 5        // Speed of the rotation of the sphere
 const movSpeed = 2        // Speed of the movement of the sphere
 const scaleMultiplier = 0.2 // Size multiplier for the sphere
 const sphereSize = 3      // Base size of the sphere
+```
 <br>
 
 ---
@@ -90,7 +97,7 @@ Proyecto que genera la animación de un cuadrado rotando, trasladándose sobre l
 
 Este proyecto utiliza las funciones `translate`, `rotate` y `scale` para modificar la posición, rotación y escala del cubo, respectivamente. Además, se emplea una función `trayectory(t, ampl)` para calcular las coordenadas *(x, y)* de la ruta basada en funciones seno y coseno.
 
-![Demostración de la animación en Processing](2025-04-12_Taller1_Transformacion/Processing/animacionCuadradoProcessing.gif)
+![Demostración de la animación en Processing](https://github.com/Jul1014/Compuvisual-General/blob/master/2025-04-12_Taller1_Transformacion/Processing/animacionCuadradoProcessing.gif)
 
 **Ejecutar**
 
@@ -104,11 +111,13 @@ Al principio del archivo se encuentran las variables que controlan los parámetr
 
 <br>
 
+```python
 timeMult = 0.001   # Time multiplier (recomended to keep it small, even 0.005 makes it hard to see)
 sizeMult = 0.5     # Size multiplier for the cube
 sineMult = 4       # Frecuency multiplier for the sine function
 amplMult = 300     # Amplitude multiplier for the trayectory
 rotMult  = 2       # Speed multiplier of the rotation of the cube
+```
 
 <br>
 
