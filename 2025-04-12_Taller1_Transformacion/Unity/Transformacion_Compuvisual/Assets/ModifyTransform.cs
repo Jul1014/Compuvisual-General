@@ -6,18 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class ModifyTransform : MonoBehaviour
 {
-    //Modifiable variables
-    float destination=0f;
-    float speed=4f;
-    float rotationSpeed = 70f;
     float dir;
-    float range= 7f;
+    float destination=0f;
+
+    //Modifiable variables
+    float speed=4f; //Speed of the movement of the cube
+    float rotationSpeed = 70f; //Speed of the rotation of the cube
+    float range= 7f; //Range for the random movement of the cube
     void Start()
     {
     }
     void Update()
     {
-
         //Moving the cube to a random point in a given range
         if (Mathf.Abs(destination-transform.position.x)<=1)
         { 
