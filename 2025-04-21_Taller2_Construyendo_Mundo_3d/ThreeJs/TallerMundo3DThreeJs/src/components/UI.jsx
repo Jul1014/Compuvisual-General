@@ -1,3 +1,4 @@
+//Ui.jsx
 import React from 'react'
 
 const UI = ({ viewMode, setViewMode, modelInfo }) => {
