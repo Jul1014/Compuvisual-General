@@ -85,8 +85,8 @@ for mesh in mallas:
 
 ## 📊 Resultados Visuales
 
-> ![Python](2025-04-21_Taller2_Construyendo_Mundo_3d/Python/ImagenMundo3DPython.png)
-> ![ThreeJs](2025-04-21_Taller2_Construyendo_Mundo_3d/ThreeJs/GifMundo3DThreeJs.gif)
+> ![Muestra del funcionamiento en Python](https://github.com/Jul1014/Compuvisual-General/blob/master/2025-04-21_Taller2_Construyendo_Mundo_3d/Python/ImagenMundo3dPython.png)
+> ![Demostracion funcionamiento en ThreeJs](https://github.com/Jul1014/Compuvisual-General/blob/master/2025-04-21_Taller2_Construyendo_Mundo_3d/ThreeJs/GifMundo3DThreeJs.gif)
 
 ---
 
