@@ -1,0 +1,45 @@
+/* App.css */
+
+body, html, #root {
+  justify-content: center;
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+}
+
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  justify-content: center;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  vertical-align: middle;
+  border-radius: 3px;
+}
+
+.color-box.orange { background: orange; }
+.color-box.green { background: green; }
+.color-box.blue { background: blue; }
+.color-box.pink { background: pink; }
+.color-box.lightblue { background: lightblue; }
+.color-box.goldenrod { background: goldenrod; }
+.color-box.coral { background: coral; }
+.color-box.dodgerblue { background: dodgerblue; }
+.color-box.purple { background: purple; }
+.color-box.aqua { background: aqua; }
