@@ -1,4 +1,4 @@
-#📊 Rasterización desde Cero: Dibujando con Algoritmos Clásicos
+# 📊 Rasterización desde Cero: Dibujando con Algoritmos Clásicos
 
 ## 📅 Fecha
 
