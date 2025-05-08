@@ -1,0 +1,160 @@
+/* app.css - Estilos para visualización de Three.js */
+
+/* Reseteo básico para eliminar márgenes y padding por defecto */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para que el contenedor HTML y body ocupen toda la pantalla */
+html, body {
+justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* Contenedor principal para la aplicación */
+#root {
+justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Estilos para el canvas de Three.js */
+canvas {
+justify-content: center;
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  outline: none;
+  /* Mejora visuales */
+  image-rendering: optimizeQuality;
+  touch-action: none;
+}
+
+/* Overlay para controles UI si los necesitas */
+.controls-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+/* Estilos para paneles de información */
+.info-panel {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  max-width: 300px;
+  z-index: 10;
+}
+
+/* Estilos para tooltips o información sobre puntos de datos */
+.tooltip {
+  position: absolute;
+  padding: 10px;
+  background-color: rgba(20, 20, 30, 0.8);
+  border-radius: 4px;
+  pointer-events: none;
+  transform: translate(-50%, -100%);
+  transition: opacity 0.2s ease;
+  z-index: 100;
+  font-size: 14px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Para pantallas de carga */
+.loading-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.loading-bar {
+  width: 300px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.loading-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #4a6bff, #2afadf);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .controls-overlay {
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+  }
+  
+  .info-panel {
+    bottom: 10px;
+    left: 10px;
+    padding: 10px;
+    max-width: 250px;
+    font-size: 14px;
+  }
+}
+
+/* Animaciones para elementos UI */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Clases de utilidad para colores relacionados con tus temas */
+.theme-temperature-text { color: #ff7b00; }
+.theme-category-text { color: #00aaff; }
+.theme-neon-text { color: #50ff50; }
+
+/* Botones estilizados para controles */
+.control-button {
+  background-color: rgba(40, 40, 50, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  margin: 5px;
+}
+
+.control-button:hover {
+  background-color: rgba(60, 60, 70, 0.9);
+  border-color: rgba(255, 255, 255, 0.5);
+}
